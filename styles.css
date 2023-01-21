@@ -25,7 +25,7 @@ main h1 {
   font-size: 40px;
 }
 
-.counter {
+#counter {
   font-size: 100px;
 }
 
@@ -43,6 +43,7 @@ main h1 {
   border: none;
   background-color: lightgrey;
   transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
