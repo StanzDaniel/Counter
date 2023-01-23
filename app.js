@@ -1,10 +1,15 @@
-
-document.getElementById('increment').addEventListener("click", increment)
-document.getElementById('decrement').addEventListener("click", decrement);
-document.getElementById('reset').addEventListener("click", reset);
+document.getElementById("increment").addEventListener("click", increment);
+document.getElementById("decrement").addEventListener("click", decrement);
+document.getElementById("reset").addEventListener("click", reset);
+document.getElementById("theme").addEventListener("click", changeTheme);
 
 let count = 0;
 
+function changeTheme() {
+  document.body.classList.toggle("dark");
+  const buttonArray = [...document.getElementsByClassName("btn")];
+  buttonArray.map((btn) => btn.classList.toggle("dark"));
+}
 
 function increment() {
   count++;
@@ -22,5 +27,5 @@ function reset() {
 }
 
 function display() {
-  document.getElementById('counter').innerText = count;
+  document.getElementById("counter").innerText = count;
 }
