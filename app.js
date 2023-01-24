@@ -7,8 +7,6 @@ let count = 0;
 
 function changeTheme() {
   document.body.classList.toggle("dark");
-  const buttonArray = [...document.getElementsByClassName("btn")];
-  buttonArray.map((btn) => btn.classList.toggle("dark"));
 }
 
 function increment() {
