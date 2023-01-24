@@ -10,6 +10,8 @@ and a focus on the functional programming paradigm.
 
 Please help me by commenting on points to improve, good practices, and errors in terms of code. Thank you very much for your help!
 
+##### *Link:* https://stanzdaniel.github.io/Counter/
+
 ***
 
 # Contador JavaScript 
@@ -23,4 +25,6 @@ y un enfoque en el paradigma de programación funcional.
 ## Ayudame
 
 Por favor ayúdeme comentando puntos a mejorar, buenas prácticas y errores en cuanto a código. ¡Muchas gracias por su ayuda!
+
+##### *Link:* https://stanzdaniel.github.io/Counter/
 
