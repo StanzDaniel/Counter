@@ -63,16 +63,12 @@ main h1 {
   transform: scale(1.2);
 }
 
-.btn:active::after {
-  transform: scale(0.2);
-  background-color: lightgrey;
+@media (any-hover: hover) {
+  .btn:hover {
+    background-color: #1b687e;
+    transform: scale(1.2);
+  }
 }
-
-.btn:hover {
-  background-color: #1b687e;
-  transform: scale(1.2);
-}
-
 /* Set Dark Mode */
 
 body.dark {
@@ -92,12 +88,9 @@ body.dark .btn:active {
   transform: scale(1.2);
 }
 
-body.dark .btn:active::after {
-  transform: scale(0.2);
-  background-color: black;
-}
-
-body.dark .btn:hover {
-  background-color: #1b687e;
-  transform: scale(1.2);
+@media (any-hover: hover) {
+  body.dark .btn:hover {
+    background-color: #1b687e;
+    transform: scale(1.2);
+  }
 }
