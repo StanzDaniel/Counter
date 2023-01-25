@@ -11,19 +11,26 @@ function changeTheme() {
 
 function increment() {
   count++;
+  vibrate();
   display();
 }
 
 function decrement() {
   count--;
+  vibrate();
   display();
 }
 
 function reset() {
   count = 0;
+  vibrate();
   display();
 }
 
 function display() {
   document.getElementById("counter").innerText = count;
+}
+
+function vibrate() {
+  window.navigator.vibrate(18); // vibrate for smartphone devices
 }
