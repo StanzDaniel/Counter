@@ -1,12 +1,14 @@
 html {
   font-family: 'Roboto Mono', monospace;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 html * {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  touch-action: inherit;
 }
 
 #theme {
@@ -53,10 +55,12 @@ main h1 {
   background-color: lightgrey;
   transition: background-color 0.2s ease;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .btn:hover {
-  background-color: slateblue;
+  background-color: #1b687e;
+  transform: scale(1.2);
 }
 
 /* Set Dark Mode */
@@ -74,5 +78,6 @@ body.dark main, body.dark .btn {
 }
 
 body.dark .btn:hover {
-  background-color: slateblue
+  background-color: #1b687e;
+  transform: scale(1.2);
 }
