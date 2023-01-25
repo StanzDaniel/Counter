@@ -58,6 +58,16 @@ main h1 {
   transition: transform 0.2s ease;
 }
 
+.btn:active {
+  background-color: #1b687e;
+  transform: scale(1.2);
+}
+
+.btn:active::after {
+  transform: scale(0.2);
+  background-color: lightgrey;
+}
+
 .btn:hover {
   background-color: #1b687e;
   transform: scale(1.2);
@@ -75,6 +85,16 @@ body.dark main, body.dark .btn {
   box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.4);
   background-color: black;
   color: white;
+}
+
+body.dark .btn:active {
+  background-color: #1b687e;
+  transform: scale(1.2);
+}
+
+body.dark .btn:active::after {
+  transform: scale(0.2);
+  background-color: black;
 }
 
 body.dark .btn:hover {
